@@ -1,0 +1,385 @@
+<!doctype html>
+<!--Alexander Herrera-->
+<!--Project 4-->
+<html>
+	<head>
+		<!--Meta Tags-->
+		<meta charset ="utf-8"/>
+		<meta name="keywords" content="College, Application, Schedule, Organizer, Todo list"/>
+		<meta name="robots" content="noindex, nofollow"/>
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="cleartype" content="on">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!--Title Tag-->
+		<title>College Organizer Launch Page</title>
+		<!--Link Sheets-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+		<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" />
+		<!--Modernizr-->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+	</head>
+	<body>
+		<!-- This is the first page -->
+	    <section data-role="page" data-filter="true" id="home" data-url="index.html" data-add-back-btn="true">
+			<header data-role="header" data-position="inline" data-fullscreen="true">
+				<!--Main header--> 
+				<h1>Organizer</h1>
+			</header>
+			<!--Content Section--> 
+			<div data-role="content" class="content">
+				<img src="images/June.png" height="150px" width="300px"/>
+				<!--Description-->
+				<p id="descriptEntry">Balance School, Work, and Personal Activities all in one Application.<p>
+				<!--Call To Action Button-->
+				<!--Add Quick Schedule--> 
+				<nav> 
+					<a href="#quickSchedule" data-role="button" id="addQuickSchedule" data-ajax="false">Add Quick Schedule
+					</a>
+				</nav>
+				<!--Option Section--> 
+				<h3>Pick An Option:</h3>
+				<div data-role="listview" data-inset="true" data-filter="true" data-content-theme="a">
+					<!--Browse About--> 
+					<li data-filtertext="About, Different organizers, Information"><a href="#about" data-rel="dialog" data-theme="c"><img src="images/QuestionMark.png" id="aboutPic"/><h3>About</h3>
+						<p id="about1">Full description about the</p><p id="about2">application and</p><p id="about3">it's features.</p></a>
+					</li>
+					<!--JSON Button-->
+					<li data-filtertext="JSON"><a href="#jsonInfo" id="json" data-rel="dialog"><h3>JSON Data</h3></a>
+					</li>
+					<!--XML Button--> 
+					<li data-filtertext="XML"><a href="#xmlInfo" id="xml" data-rel="dialog"><h3>XML Data</h3></a>
+					</li>
+					<!--CSV Button--> 
+					<li data-filtertext="XML"><a href="#" id="csv" data-rel="dialog"><h3>CSV</h3></a>
+					</li>
+				</div>
+			</div>
+			<footer data-role="footer">
+				<!--Navigation Bar--> 
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" id="navhome">Home</a></li>
+						<li><a href="https://github.com/alexcherrera/ASD/tree/gh-pages/Week1/" id="linkgh-pages">GitHub Page</a></li>
+						<li><a href="http://alexcherrera.github.com/ASD/Week1/">Live Page</a></li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+		<!--About Page--> 
+		<section data-role="page" id="about" data-add-back-btn="true">
+			<header data-role="header">
+				<h1>About</h>
+			</header>
+			<div data-role="content"class="content">
+				<p id="aboutPage">The purpose of this application is to have a sense of balance for the typical college student between school, work, and personal activities. By using different types of methods such as calendar's, todo list, reminder, and more the student will be able to organize all activities on just one device.</p>
+			</div>
+			<footer data-role="footer">
+				<!--Navigation Bar--> 
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" id="navhome">Home</a></li>
+						<li><a href="https://github.com/alexcherrera/ASD/tree/gh-pages/Week1/" id="linkgh-pages">GitHub Page</a></li>
+						<li><a href="http://alexcherrera.github.com/ASD/Week1/">Live Page</a></li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+		<!--Course Information page-->
+		<section data-role="page" id="courseInfo" data-add-back-btn="true">
+			<header data-role="header" data-position="fixed">
+				<!--Main header--> 
+				<h1>Course Information</h1>
+			</header>
+			<div data-role="content" class="content">
+
+			</div>
+			<footer data-role="footer">
+				<!--Navigation Bar--> 
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" id="navhome">Home</a></li>
+						<li><a href="https://github.com/alexcherrera/ASD/tree/gh-pages/Week1/" id="linkgh-pages">GitHub Page</a></li>
+						<li><a href="http://alexcherrera.github.com/ASD/Week1/">Live Page</a></li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+		<!--Memo page-->
+		<section data-role="page" id="memo" data-add-back-btn="true">
+			<header data-role="header" data-position="fixed">
+				<!--Main header--> 
+				<h1>Memo's</h1>
+			
+			</header>
+			<div data-role="content" class="content">
+
+			</div>
+			<footer data-role="footer">
+				<!--Navigation Bar--> 
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" id="navhome">Home</a></li>
+						<li><a href="https://github.com/alexcherrera/ASD/tree/gh-pages/Week1/" id="linkgh-pages">GitHub Page</a></li>
+						<li><a href="http://alexcherrera.github.com/ASD/Week1/">Live Page</a></li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+		<!--Source Under Construction page-->
+		<section data-role="page" id="underConstruction" data-add-back-btn="true">
+			<header data-role="header">
+				<h1>Coming Soon</h1>
+			</header>
+			<div data-role="content" class="content">
+				<p>The page that you desire is Under Construction</p>
+			</div>
+			<footer data-role="footer">
+				<!--Navigation Bar--> 
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" id="navhome">Home</a></li>
+						<li><a href="https://github.com/alexcherrera/ASD/tree/gh-pages/Week1/" id="linkgh-pages">GitHub Page</a></li>
+						<li><a href="http://alexcherrera.github.com/ASD/Week1/">Live Page</a></li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+		<section data-role="page" id="quickSchedule" data-add-back-btn="true">
+			<header data-role="header" id="qSHeader">
+				<!--Main header--> 
+				<h1>Quick Schedule</h1>
+			</header>
+			<div data-role="content" class="content">
+				<form action="#" id="collegeForm">	
+					<!--Legend Title Text-->
+					<h2>Add New Course:</h2>
+					<div data-role="fieldcontain">
+						<ul id="errorMessages"></ul>
+					</div>	
+					<div data-role="fieldcontain">
+					<label for="departments">Departments:</label>
+					<select name="departments" id="departments" value="departments" data-native-menu="false" class="required">
+						<option label="--Choose a Major--" value="--Choose a Major--">--Choose a Majar--</option>
+						<optgroup label="College Of Architecture">
+							<option value="Architecture">Architecture</option>
+						</optgroup>
+						<optgroup label="Institute Of Arts And Sciences">
+							<option value="Biology">Biology</option>
+							<option value="Mathematics">Mathematics</option>
+						</optgroup>
+						<optgroup label="Academy Of Business">
+							<option value="Accounting">Accounting</option>	
+							<option value="Economics">Economics</option>	
+						</optgroup>
+						<optgroup label="Sciences of Engineering Institute">
+							<option value="Computer Engineering">Computer Engineering</option>	
+							<option value="Electrical Engineering">Electrical Engineering</option>
+						</optgroup>
+					</select>	
+					</div>
+					<div data-role="fieldcontain">
+						<!--Course Name Input Field-->
+						<label for="courseName">Course Name:</label>
+						<input type="text" name="courseName" id="courseName" placeholder="Introduction to Biology"class="required"/>
+						<!--Course Section Input Field-->
+						<label for="courseSection">Course Section: </label>
+						<input type="text" name="courseSection" id="courseSection" class="required"/><p id="cstext">Example: BIO101</p>
+					</div>
+					<div data-role="fieldcontain">
+						<label for="topicAndSection">Topic and Section: </label>
+						<input type="text" name="topicAndSection" id="topicAndSection" class="required"/><p id="tastext">Example: Organic Compounds, Section 2.3</p>
+					</div>
+					<!--Date Information-->
+					<div data-role="fieldcontain">
+						<!--Today's Date Input Field-->
+						<label for="todaysDate">Today's Date: </label>
+						<input type="date" name="todaysDate" id="todaysDate" data-role="datebox" data-options='{"mode": "calbox"}'class="required"/>
+						<!--Due Date Input Field-->
+						<label for="dueDate">Due Date: </label>
+						<input type="date" name="dueDate" id="dueDate" data-role="datebox" data-options='{"mode": "calbox"}' class="required"/>
+					</div>
+					<!--Number of Weeks in the Class Range-->
+					<div data-role="fieldcontain">
+						<label for="weeksOfClass">The Number of Weeks for This Class:</label>
+						<input type="range" name="weeksOfClass" id="weeksOfClass" value="0" min="0" max="50"/>
+					</div>
+					<!--Is the Class on Campus or Online Slider-->
+					<div data-role="fieldcontain">
+						<label for="slideValue">Is the Class on Campus or Online:</label>
+						<select data-role="slider" id="slideValue">
+							<option value="off">Campus</option>
+							<option value="on">Online</option>
+						</select>
+					</div>
+					<!--Course Number of Credits Radio Selection-->
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup" class="radioNum">
+							<legend>Number of Credits:</legend>
+							<!--1 Credit-->
+							<input type="radio" name="courseNumCredits" id="courseNumCredits1" value="courseNumCredits1" class="required"/>
+							<label for="courseNumCredits1">1 Credit</label>
+							<!--2 Credit-->
+							<input type="radio" name="courseNumCredits" id="courseNumCredits2" value="courseNumCredits2"/>
+							<label for="courseNumCredits2">2 Credit</label>
+							<!--3 Credit-->
+							<input type="radio" name="courseNumCredits" id="courseNumCredits3" value="courseNumCredits3"/>
+							<label for="courseNumCredits3">3 Credit</label>
+							<!--4 Credit-->
+							<input type="radio" name="courseNumCredits" id="courseNumCredits4" value="courseNumCredits4"/>
+							<label for="courseNumCredits4">4 Credit</label>
+						</fieldset>
+					</div>
+					<!--Teacher Contact Information-->
+					<div data-role="fieldcontain">
+						<!--Teacher Name Input Field-->
+						<label for="teacherName">Teacher Name:</label>
+						<input type="text" name="teacherName" id="teacherName" class="required" placeholder="Mr.Roberts"/>
+						<!--Teacher Email Address Input Field-->
+						<label for="teacherEmail">Teacher Email Address:</label>
+						<input type="text" name="teacherEmail" id="teacherEmail" class="required" placeholder="aRoberts@fullsail.edu"/>
+						<!--Teacher Phone Number Input Field-->
+						<label for="teacherPhone">Teacher Phone Number:</label>
+						<input type="text" name="teacherPhone" id="teacherPhone" class="required" placeholder="111-222-3333"/>
+						<!--Best Method to Contact Teacher Checkboxes-->
+					</div>
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<legend>Best Method To Get In Contact:</legend>
+							<!--Email Option-->
+							<label for="sendEmail"><input type="checkbox" value="sendEmail" name="bestMethodContact" id="sendEmail" class="required"/>Email</label>
+							<!--Phone Number Option-->
+							<label for="phone"><input type="checkbox" value="phone" name="bestMethodContact" id="phone"/>Phone</label>
+							<!--Office Hours Option-->
+							<label for="office-Hours"><input type="checkbox" value="office-Hours" name="bestMethodContact" id="office-Hours"/>Office Hours</label>
+						</fieldset>
+					</div>
+					<!--Note Section-->
+					<div>
+						<label for="noteSection">Assignment Notes:</label><textarea id="noteSection" placeholder="Class starts"></textarea>
+					</div>
+					<!--Submit and Reset Field-->
+					<div data-role="fieldcontain">
+						<input type="submit" value="submit" id="submit"data-theme="b"/>
+						<input type="reset" value="reset" id="reset" onclick="return false" data-theme="a"/>
+					</div>
+					<a href="#scheduleErrors" id="schedErrorsLink" data-rel="dialog" data-transition="pop">Open Errors</a>
+				</form>	
+			</div>
+			<nav>
+				<br/>
+				<a href="#" id="clear" data-inline="true" data-role="button" data-add-back-btn="true">Erase Information</a>
+				<a href="#displayLinkpg" id="display" data-inline="true" data-role="button" data-add-back-btn="true">Display Information</a>
+				<a href="#quickSchedule" id="addAssign" data-inline="true" data-role="button" data-add-back-btn="true">Add New Assignment</a>
+			</nav>
+			<footer data-role="footer">
+				<!--Navigation Bar--> 
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-ajax="false" id="navhome">Home</a></li>
+						<li><a href="https://github.com/alexcherrera/ASD/tree/gh-pages/Week1/" id="linkgh-pages">GitHub Page</a></li>
+						<li><a href="http://alexcherrera.github.com/ASD/Week1/">Live Page</a></li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+		<section data-role="page" id="displayLinkpg" data-add-back-btn="true">
+			<header data-role="header" id="qSHeader" data-position="fixed">
+				<!--Main header--> 
+				<h1>Display Information</h1>
+			</header>
+			<div data-role="content" class="content" id="displayLink">
+			
+			</div>	
+			<footer data-role="footer">
+				<!--Navigation Bar--> 
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-ajax="false" id="navhome">Home</a></li>
+						<li><a href="https://github.com/alexcherrera/ASD/tree/gh-pages/Week1/" id="linkgh-pages">GitHub Page</a></li>
+						<li><a href="http://alexcherrera.github.com/ASD/Week1/">Live Page</a></li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+		<section data-role="page" id="jsonInfo" data-add-back-btn="true">
+			<header data-role="header" id="jsonHeader" data-position="fixed">
+				<!--Main header--> 
+				<h1>JSON Data</h1>
+			</header>
+			<div data-role="content" class="content" id="jsonCont">
+				<ul id="showJSON" data-role="listview">
+
+				</ul>
+					<div id="showJson" class="showJson">
+
+					</div>
+				</div>
+			</div>	
+			<footer data-role="footer">
+				<!--Navigation Bar--> 
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-ajax="false" id="navhome">Home</a></li>
+						<li><a href="https://github.com/alexcherrera/ASD/tree/gh-pages/Week1/" id="linkgh-pages">GitHub Page</a></li>
+						<li><a href="http://alexcherrera.github.com/ASD/Week1/">Live Page</a></li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+		<section data-role="page" id="xmlInfo" data-add-back-btn="true">
+			<header data-role="header" id="xmlHeader" data-position="fixed">
+				<!--Main header--> 
+				<h1>XML Data</h1>
+			</header>
+			<div data-role="content" class="content" id="xmlCont">
+				<div id="xmlapp">
+
+				</div>
+				
+			</div>	
+			<footer data-role="footer">
+				<!--Navigation Bar--> 
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-ajax="false" id="navhome">Home</a></li>
+						<li><a href="https://github.com/alexcherrera/ASD/tree/gh-pages/Week1/" id="linkgh-pages">GitHub Page</a></li>
+						<li><a href="http://alexcherrera.github.com/ASD/Week1/">Live Page</a></li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+		<section data-role="page" id="csvInfo" data-add-back-btn="true">
+			<header data-role="header" id="csvHeader" data-position="fixed">
+				<!--Main header--> 
+				<h1>CSV Data</h1>
+			</header>
+			<div data-role="content" class="content" id="csvCont">
+				<div id="csvapp">
+
+				</div>
+				
+			</div>	
+			<footer data-role="footer">
+				<!--Navigation Bar--> 
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-ajax="false" id="navhome">Home</a></li>
+						<li><a href="https://github.com/alexcherrera/ASD/tree/gh-pages/Week1/" id="linkgh-pages">GitHub Page</a></li>
+						<li><a href="http://alexcherrera.github.com/ASD/Week1/">Live Page</a></li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+		<!--JavaScript & JQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+		<script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.core.min.js"></script>
+		<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.mode.calbox.min.js"></script>
+		<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i18n/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+		<script src="js/main.js" type="text/javascript" ></script>
+		<script src="js/json.js" type="text/javascript"></script>
+	</body>
+</html>
