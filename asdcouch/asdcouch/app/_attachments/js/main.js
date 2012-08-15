@@ -1,27 +1,35 @@
-$(document).on('pageinit', function(){
+$('#jsonInfo').on('pageinit', function(){
 	console.log("Now");
 	$.ajax({
-		"url": "_view/schedules",
+		"url": '/college-app/_all_docs?include_docs=true&start_key="schedules1"&end_key="schedules6"',
 		"dataType": "json",
 		"success": function (data) {
 			console.log(data);
 			$.each(data.rows, function(index, schedule){
-				console.log(value);
-				var major = schedule.value.major;
-				var cName = schedule.value.cName;
-				var cSection = schedule.value.cSection;
-				var topicAndSec = schedule.value.topicAndSec;
-				var todaysDate = schedule.value.todaysDate;
-				var dueDate = schedule.value.dueDate;
-				var numOfWeeks = schedule.value.numOfWeeks;
-				var classOptView = schedule.value.classOptView;
-				var numOfCredits = schedule.value.numOfCredits;
-				var teachName = schedule.value.teachName;
-				var teachEmail = schedule.value.teachEmail;
-				var teachPhone = schedule.value.teachPhone;
-				var option = schedule.value.option;
-				var note = schedule.value.note;
+				console.log(schedule);
+				var major = schedule.doc.major;
+				var cName = schedule.doc.cName;
+				var cSection = schedule.doc.cSection;
+				var topicAndSec = schedule.doc.topicAndSec;
+				var todaysDate = schedule.doc.todaysDate;
+				var dueDate = schedule.doc.dueDate;
+				var numOfWeeks = schedule.doc.numOfWeeks;
+				var classOptView = schedule.doc.classOptView;
+				var numOfCredits = schedule.doc.numOfCredits;
+				var teachName = schedule.doc.teachName;
+				var teachEmail = schedule.doc.teachEmail;
+				var teachPhone = schedule.doc.teachPhone;
+				var option = schedule.doc.option;
+				var note = schedule.doc.note;
+				$('#schedulesList').append(
+					$('<li>').append(
+						$('<a>').append("href", "#")
+							.text(major)
+					)
+				);
 			});
+			//Once added all items, need to have JQM to refresh the page to update any new styles/changes.
+			$('#schedulesList').listview('refresh');
 		}
 	});
 });
