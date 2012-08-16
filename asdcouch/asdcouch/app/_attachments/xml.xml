@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<courseInfo>
+	<schedules id="schedule1">
+		<major>Architecture</major>
+		<cName>Building Design</cName>
+		<cSection>ARC134</cSection>
+		<topicAndSec>Building FrameWork, Section 1.2</topicAndSec>
+		<todaysDate>05/24/2012</todaysDate>
+		<dueDate>05/26/2012</dueDate>
+		<numOfWeeks>12</numOfWeeks>
+		<classOptView>Online</classOptView>
+		<numOfCredits>4</numOfCredits>
+		<teachName>Mr.Roberts</teachName>
+		<teachEmail>aRoberts@fullsail.com</teachEmail>
+		<teachPhone>000-000-0000</teachPhone>
+		<option>Email</option>
+		<note>This is a review for my test.</note>
+	</schedules>
+	<schedules id="schedule2">
+		<major>Biology</major>
+		<cName>Introduction to Biology</cName>
+		<cSection>BIO101</cSection>
+		<topicAndSec>Organic Compounds, Section 2.3</topicAndSec>
+		<todaysDate>05/25/2012</todaysDate>
+		<dueDate>05/27/2012</dueDate>
+		<numOfWeeks>11</numOfWeeks>
+		<classOptView>OnCampus</classOptView>
+		<numOfCredits>3</numOfCredits>
+		<teachName>Mrs.Roberts</teachName>
+		<teachEmail>jRoberts@fullsail.com</teachEmail>
+		<teachPhone>111-111-1111</teachPhone>
+		<option>Phone</option>
+		<note>Remember to highlight important facts.</note>
+	</schedules>
+	<schedules id="schedule3">
+		<major>Mathematics</major>
+		<cName>Calculus 1</cName>
+		<cSection>MTH200</cSection>
+		<topicAndSec>Sine and Cosine, Section 3.1</topicAndSec>
+		<todaysDate>05/28/2012</todaysDate>
+		<dueDate>05/29/2012</dueDate>
+		<numOfWeeks>10</numOfWeeks>
+		<classOptView>Online</classOptView>
+		<numOfCredits>2</numOfCredits>
+		<teachName>Mr.Hernandez</teachName>
+		<teachEmail>bHernandez@fullsail.com</teachEmail>
+		<teachPhone>222-222-2222</teachPhone>
+		<option>Office Hours</option>
+		<note>First week and first learning Sine and Cosine.</note>
+	</schedules>
+	<schedules id="schedule4">
+		<major>Accounting</major>
+		<cName>Tax Rates</cName>
+		<cSection>ACC245</cSection>
+		<topicAndSec>Inflation, Section 4.4</topicAndSec>
+		<todaysDate>06/1/2012</todaysDate>
+		<dueDate>06/2/2012</dueDate>
+		<numOfWeeks>9</numOfWeeks>
+		<classOptView>OnCampus</classOptView>
+		<numOfCredits>1</numOfCredits>
+		<teachName>Mrs.Hernandez</teachName>
+		<teachEmail>fHernandez@fullsail.com</teachEmail>
+		<teachPhone>333-333-3333</teachPhone>
+		<option>Email</option>
+		<note>Use a calculator for the math problems.</note>
+	</schedules>
+	<schedules id="schedule5">
+		<major>Economics</major>
+		<cName>Intermediate Micro Economics</cName>
+		<cSection>ECO312</cSection>
+		<topicAndSec>Monopoly Pricing, Section 5.1</topicAndSec>
+		<todaysDate>06/3/2012</todaysDate>
+		<dueDate>06/4/2012</dueDate>
+		<numOfWeeks>8</numOfWeeks>
+		<classOptView>Online</classOptView>
+		<numOfCredits>4</numOfCredits>
+		<teachName>Mr.Garcia</teachName>
+		<teachEmail>tGarcia@fullsail.com</teachEmail>
+		<teachPhone>444-444-4444</teachPhone>
+		<option>Phone</option>
+		<note>Use notes from last class for this section.</note>
+	</schedules>
+	<schedules id="schedule6">
+			<major>Computer Engineering</major>
+			<cName>Programming 1</cName>
+			<cSection>CPE111</cSection>
+			<topicAndSec>Object Oriented Programming, Section 6.3</topicAndSec>
+			<todaysDate>06/5/2012</todaysDate>
+			<dueDate>06/6/2012</dueDate>
+			<numOfWeeks>7</numOfWeeks>
+			<classOptView>OnCampus</classOptView>
+			<numOfCredits>3</numOfCredits>
+			<teachName>Mrs.Garcia</teachName>
+			<teachEmail>sGarcia@fullsail.com</teachEmail>
+			<teachPhone>555-555-5555</teachPhone>
+			<option>Office Hours</option>
+			<note>Use notes from the teachers power point.</note>
+	</schedules>
+	<schedules id="schedule7">
+			<major>Electrical Engineering</major>
+			<cName>Circuit Theory</cName>
+			<cSection>EEE323</cSection>
+			<topicAndSec>Electrical Current, Section 7.1</topicAndSec>
+			<todaysDate>06/7/2012</todaysDate>
+			<dueDate>06/8/2012</dueDate>
+			<numOfWeeks>6</numOfWeeks>
+			<classOptView>Online</classOptView>
+			<numOfCredits>2</numOfCredits>
+			<teachName>Mr.Torres</teachName>
+			<teachEmail>eTorres@fullsail.com</teachEmail>
+			<teachPhone>666-666-6666</teachPhone>
+			<option>Email</option>
+			<note>Read chapter and take notes.</note>
+	</schedules>
+</courseInfo>
