@@ -151,35 +151,113 @@ $('#home').on('pageinit', function(){
 	$('#loadServer').on('click', function(){
 		console.log("Now");
 		$.ajax({
-			"url": '/college-app/_all_docs?include_docs=true&start_key="schedules1"&end_key="schedules6"',
+			"url": '/college-app/_all_docs?include_docs=true&start_key="schedules1"&end_key="schedules8"',
 			"dataType": "json",
 			"success": function (data) {
 				console.log(data);
-				$.each(data.rows, function(index, schedule){
-					console.log(schedule);
-					var major = schedule.doc.major;
-					var cName = schedule.doc.cName;
-					var cSection = schedule.doc.cSection;
-					var topicAndSec = schedule.doc.topicAndSec;
-					var todaysDate = schedule.doc.todaysDate;
-					var dueDate = schedule.doc.dueDate;
-					var numOfWeeks = schedule.doc.numOfWeeks;
-					var classOptView = schedule.doc.classOptView;
-					var numOfCredits = schedule.doc.numOfCredits;
-					var teachName = schedule.doc.teachName;
-					var teachEmail = schedule.doc.teachEmail;
-					var teachPhone = schedule.doc.teachPhone;
-					var option = schedule.doc.option;
+				$.each(data.rows, function(index, schedules){
+					console.log(schedules);
+					var major = schedules.doc.major;
+					var cName = schedules.doc.cName;
+					var cSection = schedules.doc.cSection;
+					var topicAndSec = schedules.doc.topicAndSec;
+					var todaysDate = schedules.doc.todaysDate;
+					var dueDate = schedules.doc.dueDate;
+					var numOfWeeks = schedules.doc.numOfWeeks;
+					var classOptView = schedules.doc.classOptView;
+					var numOfCredits = schedules.doc.numOfCredits;
+					var teachName = schedules.doc.teachName;
+					var teachEmail = schedules.doc.teachEmail;
+					var teachPhone = schedules.doc.teachPhone;
+					var option = schedules.doc.option;
 					var note = schedule.doc.note;
-					$('#schedulesCouchList').append(
+					$('#schedulesServerList').append(
 						$('<li>').append(
 							$('<a>').append("href", "#")
 								.text(major)
 						)
 					);
+					$('#schedulesServerList').append(
+						$('<li>').append(
+							$('<a>').append("href", "#")
+								.text(cName)
+						)
+					);
+					$('#schedulesServerList').append(
+						$('<li>').append(
+							$('<a>').append("href", "#")
+								.text(cSection)
+						)
+					);
+					$('#schedulesServerList').append(
+						$('<li>').append(
+							$('<a>').append("href", "#")
+								.text(topicAndSec)
+						)
+					);
+					$('#schedulesServerList').append(
+						$('<li>').append(
+							$('<a>').append("href", "#")
+								.text(todaysDate)
+						)
+					);
+					$('#schedulesServerList').append(
+						$('<li>').append(
+							$('<a>').append("href", "#")
+								.text(dueDate)
+						)
+					);
+					$('#schedulesServerList').append(
+						$('<li>').append(
+							$('<a>').append("href", "#")
+								.text(numOfWeeks)
+						)
+					);
+					$('#schedulesServerList').append(
+						$('<li>').append(
+							$('<a>').append("href", "#")
+								.text(classOptView)
+						)
+					);
+					$('#schedulesServerList').append(
+						$('<li>').append(
+							$('<a>').append("href", "#")
+								.text(numOfCredits)
+						)
+					);
+					$('#schedulesServerList').append(
+						$('<li>').append(
+							$('<a>').append("href", "#")
+								.text(teachName)
+						)
+					);
+					$('#schedulesServerList').append(
+						$('<li>').append(
+							$('<a>').append("href", "#")
+								.text(teachEmail)
+						)
+					);
+					$('#schedulesServerList').append(
+						$('<li>').append(
+							$('<a>').append("href", "#")
+								.text(teachPhone)
+						)
+					);
+					$('#schedulesServerList').append(
+						$('<li>').append(
+							$('<a>').append("href", "#")
+								.text(option)
+						)
+					);
+					$('#schedulesServerList').append(
+						$('<li>').append(
+							$('<a>').append("href", "#")
+								.text(note)
+						)
+					);
 				});
 				//Once added all items, need to have JQM to refresh the page to update any new styles/changes.
-				$('#schedulesList').listview('refresh');
+				$('#schedulesServerList').listview('refresh');
 			}
 		});
 	});

@@ -111,6 +111,38 @@
 		"teachPhone": ["Teacher Phone Number:", "666-666-6666"],
 		"option": ["Turn In Option:", "Email"],
 		"note": ["Note Section:", "Read chapter and take notes."]
+		},
+		{
+		"major": ["Major Choice:", "Electrical Engineering"],
+		"cName": ["Course Name:", "Circuit Theory2"],
+		"cSection": ["Course Section:", "EEE424"],
+		"topicAndSec": ["Topic and Section:", "Electrical Waves, Section 9.1"],
+		"todaysDate": ["Today's Date:", "07/7/2012"],
+		"dueDate":["Due Date:", "07/9/2012"],
+		"numOfWeeks": ["Number of Weeks:", "10"],
+		"classOptView": ["Is the Class Online or OnCampus:", "Online"],
+		"numOfCredits": ["Number of Credits:", "4"],
+		"teachName": ["Teacher Name:", "Mrs.Torres"],
+		"teachEmail": ["Teacher Email:", "iTorres@fullsail.com"],
+		"teachPhone": ["Teacher Phone Number:", "777-777-7777"],
+		"option": ["Turn In Option:", "Email"],
+		"note": ["Note Section:", "Read chapter and take notes and prepare for exam."]
+		},
+		{
+		"major": ["Major Choice:", "Computer Engineering"],
+		"cName": ["Course Name:", "Programming 2"],
+		"cSection": ["Course Section:", "CPE222"],
+		"topicAndSec": ["Topic and Section:", "Compliers, Section 3.4"],
+		"todaysDate": ["Today's Date:", "09/13/2012"],
+		"dueDate":["Due Date:", "079/19/2012"],
+		"numOfWeeks": ["Number of Weeks:", "13"],
+		"classOptView": ["Is the Class Online or OnCampus:", "OnCampus"],
+		"numOfCredits": ["Number of Credits:", "4"],
+		"teachName": ["Teacher Name:", "Mr.John"],
+		"teachEmail": ["Teacher Email:", "sJohn@fullsail.com"],
+		"teachPhone": ["Teacher Phone Number:", "888-888-8888"],
+		"option": ["Turn In Option:", "Email"],
+		"note": ["Note Section:", "Read chapter and take notes and prepare for exam."]
 		}
 	]
 }
